@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Testing</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/sixarm_ruby_password_attribute_test_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/sixarm_ruby_password_attribute_test.rb">test/sixarm_ruby_password_attribute_test.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000002">#test_password_equal</a></li>
+					
+					<li><a href="#M000003">#test_password_redux</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_password_attribute_gemspec.html">sixarm_ruby_password_attribute.gemspec</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_password_attribute_sha512_txt.html">sixarm_ruby_password_attribute.sha512.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./PasswordAttribute.html">PasswordAttribute</a></li>
+				
+					<li><a href="./Testing.html">Testing</a></li>
+				
+					<li><a href="./User.html">User</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Testing</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="test-password-equal-method" class="method-detail ">
+				<a name="M000002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_password_equal</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Ensure that we can set a password, get a password, and that diffent
+passwords cause different results.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-password-equal-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_password_attribute_test.rb, line 10</span>
+10:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_password_equal</span>
+11:   <span class="ruby-identifier">user1</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>
+12:   <span class="ruby-identifier">user2</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>
+13:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">user1</span>,<span class="ruby-value str">&quot;user1&quot;</span>)
+14:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">user1</span>,<span class="ruby-value str">&quot;user2&quot;</span>)
+15:   <span class="ruby-identifier">user1</span>.<span class="ruby-identifier">password</span>=<span class="ruby-value str">'hello'</span>
+16:   <span class="ruby-identifier">user2</span>.<span class="ruby-identifier">password</span>=<span class="ruby-value str">'world'</span>
+17:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">user1</span>.<span class="ruby-identifier">password</span>,<span class="ruby-value str">&quot;user1.password&quot;</span>)
+18:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">user2</span>.<span class="ruby-identifier">password</span>,<span class="ruby-value str">&quot;user2.password&quot;</span>) 
+19:   <span class="ruby-identifier">assert_not_same</span>(<span class="ruby-identifier">user1</span>.<span class="ruby-identifier">password</span>,<span class="ruby-identifier">user2</span>.<span class="ruby-identifier">password</span>,<span class="ruby-value str">&quot;user1.password,user2.pasword&quot;</span>)
+20:   <span class="ruby-identifier">assert_not_equal</span>(<span class="ruby-identifier">user1</span>.<span class="ruby-identifier">password</span>.<span class="ruby-identifier">to_s</span>,<span class="ruby-identifier">user2</span>.<span class="ruby-identifier">password</span>.<span class="ruby-identifier">to_s</span>,<span class="ruby-value str">&quot;user1.password.to_s,user2.pasword.to_s&quot;</span>)
+21:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-password-redux-method" class="method-detail ">
+				<a name="M000003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_password_redux</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Ensure that when we get a password more than once, the passwords are equal
+and non-nil.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-password-redux-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_password_attribute_test.rb, line 27</span>
+27:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_password_redux</span>
+28:   <span class="ruby-identifier">user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>
+29:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">user</span>,<span class="ruby-value str">&quot;user&quot;</span>)
+30:   <span class="ruby-identifier">user</span>.<span class="ruby-identifier">password</span>=<span class="ruby-value str">'hello'</span>
+31:   <span class="ruby-identifier">x</span>=<span class="ruby-identifier">user</span>.<span class="ruby-identifier">password</span> 
+32:   <span class="ruby-identifier">y</span>=<span class="ruby-identifier">user</span>.<span class="ruby-identifier">password</span>
+33:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">x</span>,<span class="ruby-value str">&quot;user.password x&quot;</span>)
+34:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">y</span>,<span class="ruby-value str">&quot;user.password y&quot;</span>)
+35:   <span class="ruby-identifier">x</span>=<span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_s</span>
+36:   <span class="ruby-identifier">y</span>=<span class="ruby-identifier">y</span>.<span class="ruby-identifier">to_s</span>
+37:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">x</span>,<span class="ruby-value str">&quot;user.password x to_s&quot;</span>)
+38:   <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">y</span>,<span class="ruby-value str">&quot;user.password y to_s&quot;</span>)
+39:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>,<span class="ruby-value str">&quot;user.password x to_s, user.password y to_s&quot;</span>)
+40:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
