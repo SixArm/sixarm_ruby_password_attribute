@@ -1,16 +1,18 @@
+# -*- encoding: utf-8 -*-
 =begin rdoc
 
-= SixArm Ruby Gem: PasswordAttribute module
+= SixArm Ruby Gem » PasswordAttribute
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: CreativeCommons License, Non-commercial Share Alike
-License:: LGPL, GNU Lesser General Public License
+License:: Your choice of BSD, MIT, LGPL, or CreativeCommons Non-commercial Share Alike
 
-Easy way to add BCrypt strong password capability to an ActiveRecord model.
+PasswordAttribute is an easy way to add BCrypt strong password capability.
+
+This is typically useful to add to a Ruby On Rails ActiveRecord user model.
 
 Example:
-  require 'ruby_password_attribute'
+  require 'sixarm_ruby_password_attribute'
   class User
     include PasswordAttribute
   end
