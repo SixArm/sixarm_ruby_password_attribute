@@ -1,5 +1,4 @@
-
-= SixArm Ruby Gem: PasswordAttribute module
+= SixArm.com » Ruby » PasswordAttribute module to add strong passwords to ActiveRecord
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
