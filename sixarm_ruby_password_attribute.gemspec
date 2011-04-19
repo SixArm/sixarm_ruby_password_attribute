@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_password_attribute"
   s.summary           = "SixArm.com » Ruby » PasswordAttribute model to provides read/write for an ActiveRecord password attribute based on bcrypt"
-  s.version           = "1.5.0"
+  s.version           = "1.5.8"
 
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.require_path      = 'lib'
   s.has_rdoc          = true
 
-  top_files           = [".gemtest","Rakefile","README.rdoc","INSTALL.txt","LICENSE.txt"]
+  top_files           = [".gemtest", "CHANGELOG.txt", "INSTALL.txt", "LICENSE.txt", "Rakefile", "README.rdoc", "VERSION"]
   lib_files           = ["lib/#{s.name}.rb"]
   test_files          = ["test/#{s.name}_test.rb"]
 
@@ -22,6 +22,6 @@ Gem::Specification.new do |s|
   s.test_files        = test_files
 
   s.add_dependency('bcrypt-ruby', '>= 2.0.3')
-  s.add_dependency('sixarm_ruby_active_record_mock', '>= 1.2.6') # for test
+  s.add_dependency('sixarm_ruby_active_record_mock', '= 1.4.2') # for test
 
 end
