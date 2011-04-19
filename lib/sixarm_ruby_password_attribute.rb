@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 =begin rdoc
-Please see README.doc
+Please see README.rdoc
 =end
 
 require 'bcrypt'
