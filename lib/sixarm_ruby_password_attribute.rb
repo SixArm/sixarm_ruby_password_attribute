@@ -1,66 +1,43 @@
+# -*- coding: utf-8 -*-
+
 =begin rdoc
 
-= SixArm Ruby Gem: PasswordAttribute module
+= SixArm Ruby Gem: PasswordAttribute module to add BCrypt to an ActiveRecord model
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: CreativeCommons License, Non-commercial Share Alike
-License:: LGPL, GNU Lesser General Public License
+Copyright:: Copyright (c) 2006-2011 Joel Parker Henderson
+License:: See LICENSE.txt file  
 
 Easy way to add BCrypt strong password capability to an ActiveRecord model.
 
 Example:
-  require 'ruby_password_attribute'
+  require 'sixarm_ruby_password_attribute'
   class User
     include PasswordAttribute
   end
 
 Example: create new user
-  u=User.new
-  u.password='secret'  # automatically converts plain text to bcrypt
-  u.save
+  user=User.new
+  user.password='secret'  # automatically converts plain text to bcrypt
+  user.save
 
 Example: is a user's password valid?
-  u = User.find(id) or raise 'user not found'
-  u.password=='secret'  # automatically converts plain text to bcrypt
-    ... password is valid ...
+  if user.password=='secret' 
+    # password is valid
   else
-    ... password doesn't match ...
+    # password is invalid
   end
-
-Example: mock testing in irb
-
-  require 'rubygems'
-  => true
-
-  require 'ruby_active_record_mock'
-  => true
-
-  require 'bcrypt'
-  => true
-
-  require 'ruby_password_attribute'
-  => true
-
-  class UserMock < ActiveRecordMock
-    include PasswordAttribute
-  end
-  => UserMock
-
-  u = UserMock.new
-  => #<UserMock:0xb7b9c924 @attributes={}>
 
   u.password='secret'
-  => "secret"
+  => user's password is now secret
 
   u.password=='secret'
   => true
 
-  u.password == 'wrong'
+  u.password=='xxx'
   => false
 
 =end
-
 
 require 'bcrypt'
 
@@ -77,3 +54,5 @@ module PasswordAttribute
   end
 
 end
+
+
