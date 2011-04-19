@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
   s.test_files        = ['test/sixarm_ruby_password_attribute_test.rb']
 
   s.add_dependency('bcrypt-ruby', '>= 2.0.3')
-  s.add_dependency('sixarm_ruby_application_controller_mock', '>= 1.2.6') # for test
+  s.add_dependency('sixarm_ruby_active_record_mock', '>= 1.2.6') # for test
 
 end
