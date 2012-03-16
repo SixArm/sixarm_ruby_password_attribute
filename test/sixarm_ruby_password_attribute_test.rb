@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 require 'minitest/autorun'
-require 'sixarm_ruby_password_attribute'
-require 'sixarm_ruby_active_record_mock'
 require 'simplecov'
 SimpleCov.start
+require 'sixarm_ruby_password_attribute'
+require 'sixarm_ruby_active_record_mock'
 
 class User < ActiveRecordMock
   include PasswordAttribute
