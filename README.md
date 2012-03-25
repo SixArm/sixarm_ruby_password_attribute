@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> PasswordAttribute module to add strong passwords to ActiveRecord
 
-* Docs: <http://sixarm.com/sixarm_ruby_password_attribute/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_password_attribute/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_password_attribute>
 * Repo: <http://github.com/sixarm/sixarm_ruby_password_attribute>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
