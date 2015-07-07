@@ -3,7 +3,7 @@
 Please see README
 =end
 
-require 'bcrypt'
+require "bcrypt"
 
 module PasswordAttribute
 
