@@ -31,13 +31,13 @@ Want to help? We're happy to get pull requests.
 
 To install using a Gemfile, add this:
 
-    gem "sixarm_ruby_password_attribute", ">= 1.6.1, < 2"
+    gem "sixarm_ruby_password_attribute", ">= 1.6.1", "< 2"
 
 To install using the command line, run this:
 
     gem install sixarm_ruby_password_attribute -v ">= 1.6.1, < 2"
 
-To install using the command with high security, run this:
+To install using the command line with high security, run this:
 
     wget http://sixarm.com/sixarm.pem
     gem cert --add sixarm.pem && gem sources --add http://sixarm.com
