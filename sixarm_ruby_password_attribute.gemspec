@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_password_attribute"
-  s.summary           = "SixArm.com » Ruby » PasswordAttribute model"
+  s.summary           = "SixArm.com → Ruby → PasswordAttribute model"
   s.description       = "PasswordAttribute model provides read/write for an ActiveRecord password attribute based on bcrypt"
   s.version           = "1.6.1"
 
