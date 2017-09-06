@@ -9,7 +9,7 @@ class User < ActiveRecordMock
   include PasswordAttribute
 end
 
-class Testing < Test::Unit::TestCase
+class Testing < Minitest::Test
 
   def test_get_and_set
     user=User.new
