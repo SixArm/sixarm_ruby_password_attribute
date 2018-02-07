@@ -2,7 +2,7 @@
 
 <!--header-open-->
 
-[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/$id/maintainability)](https://codeclimate.com/github/SixArm/$dir/maintainability)
+[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/7150ab3f6beea07263bc/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_password_attribute/maintainability)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_password_attribute.png)](https://travis-ci.org/SixArm/sixarm_ruby_password_attribute)
 
 * Git: <https://github.com/sixarm/sixarm_ruby_password_attribute>
